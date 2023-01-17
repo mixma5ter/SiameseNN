@@ -1,16 +1,16 @@
 # SiameseNN
 
-#### Cиамская нейронная сеть для сайта [ucoin.net](ucoin.net)
+#### Siamese neural network for the website [ucoin.net](ucoin.net)
 
 [![Mixmaster](https://img.shields.io/badge/Developed%20by-mixmaster-blue?style=for-the-badge)](https://github.com/mixma5ter)
 
-Модель построена на основе двух сверточных сетей (CNN), с одинаковыми весами и архитектурой.
+A model based on two convolutional neural networks (CNNs) with equal weights and architecture.
 
-На вход модель принимает два изображения и возвращает коэффициент сходства изображений от 0 до 1.
+The model accepts two images as input and outputs the images similarity coefficient ranging between 0 and 1.
 
-Отличается от аналогичных нейронных сетей тем, что обучается на небольшом количестве данных.
+Differs from similar neural networks in using a small dataset.
 
-### Технологии
+### Tech stack
 
 * Python 3.7
 * Jupyter
@@ -22,16 +22,16 @@
 
 ### Описание
 
-* `images_prep` - подготовка изображений
-* `data_prep` - подготовка данных
-* `model_tuner` - оптимизация гипер-параметров
-* `siamese_nn` - создание и обучение сети
-* `images` - папка для пользовательских изображений
-* `data` - папка с подготовленными данными изображений
+* `images_prep` - images preparation
+* `data_prep` - data preparation
+* `model_tuner` - hyper parameters tuning
+* `siamese_nn` - network creation and learning
+* `images` - directory for user’s images
+* `data` - directory with prepared data
 
-Для обучения модели на своих изображениях в папке `images` создать каскад папок, в каждой из которых лежат изображения одного класса.
+To train the model on your images, create a cascade of directories, each of which contains a set of images of the same class/type.
 
-Пример:
+Example:
 ```
 images
    |_____s1
@@ -45,7 +45,7 @@ images
    |_____s40
 ```
 
-### Метрики сети
+### Network metrics
 
 ![Accuracies](docs/acc.png)
 
